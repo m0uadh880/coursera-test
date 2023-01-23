@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: cursive, serif;
+    font-size: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 175%;
+}
+
+h2 {
+    position: absolute;
+    font-size: 125%;
+    margin: 0;
+}
+
+#Chicken>h2 {
+    border-bottom: black 3px solid;
+    border-left: black 3px solid;
+    background: pink;
+    position: relative;
+    left: 60%;
+    width: 40%;
+    text-align: center;
+}
+
+#Beef>h2 {
+    border-bottom: black 3px solid;
+    border-left: black 3px solid;
+    background: rgb(203, 26, 56);
+    position: relative;
+    left: 60%;
+    width: 40%;
+    text-align: center;
+    color: aliceblue;
+}
+
+#Sushi>h2 {
+    border-bottom: black 3px solid;
+    border-left: black 3px solid;
+    background: rgb(223, 211, 129);
+    position: relative;
+    left: 60%;
+    width: 40%;
+    text-align: center;
+}
+
+div {
+    margin-top: 5%;
+}
+
+div>div {
+    background: rgba(128, 128, 128, 0.826);
+    border: black 3px solid;
+    margin: 10px;
+    width: 31%;
+    height: 25%;
+    float: left;
+}
+
+#Chicken {
+    float: left;
+    margin-left: 1%;
+    margin-right: 1%;
+
+}
+
+#Sushi {
+    float: right;
+}
+
+#Beef {
+    margin-right: -1%;
+}
+
+p {
+    padding: 10px;
+    margin-top: -10px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #Chicken {
+        width: 45%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        float: left;
+
+    }
+
+    #Beef {
+        width: 45%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        float: right;
+    }
+
+    #Sushi {
+        clear: left;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        width: 95%;
+    }
+
+    #Sushi>h2 {
+        left: 80%;
+        width: 20%;
+    }
+
+}
+@media (max-width: 768px){
+    #Chicken {
+        clear: left;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        width: 95%;
+    }
+
+    #Chicken>h2 {
+        left: 80%;
+        width: 20%;
+    }
+    #Beef {
+        clear: left;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        width: 95%;
+    }
+
+    #Beef>h2 {
+        left: 80%;
+        width: 20%;
+    }
+    #Sushi {
+        clear: left;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        width: 95%;
+    }
+
+    #Sushi>h2 {
+        left: 80%;
+        width: 20%;
+    }
+}
